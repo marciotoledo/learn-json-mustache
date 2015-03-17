@@ -1,0 +1,81 @@
+{ 
+  "macrosegmentos": [{
+    "id" : "m1",
+      "titulo" : "1. Ricos e Bem Sucedidos das Metrópoles",
+      "descricao" : "Grupo representado em sua totalidade por segmentos populacionais com classe A da região metropolitana.",
+      "imagem" : "path/da/imagem.png",
+      "segmentos" : [{
+        "id" : "s1",
+          "titulo" : "Segmento 1 - Elite Metropolitana",
+          "descricao" : "Representa a elite das grandes metrópoles brasileiras, com renda mais alta dentre os todos  os  segmentos  populacionais.  Moram  apartamentos  amplos  e  próprios  em aquisição, com um excelente acesso à infraestrutura e um alto percentual possui pós-graduação.",
+          "imagem" : "path/da/image.png",
+          "caracteristicas" : [
+            "Possui renda média de R$11.191,73",
+            "Segmento da população que menos andade metrô e debicicletaem relação aos demais segmentos de classe A",
+            "Maior número de ateus em relação aos demais segmentos da população e, ao contrário, o menor número de evangélicos"
+          ],
+        "id" : "s2",
+          "titulo" : "Segmento 2 - Vivendo em Mansões de Luxo",
+          "descricao" : "A população deste segmento mora em casas nas metrópoles com mais de quatro banheiros, com um excelente acesso à infraestrutura. Encontra-se menos concentrado na região Centro-oeste dentre os segmentos do macro segmento Ricos e Bem Sucedidos das Metrópoles.",
+          "imagem" : "path/da/image.png",
+          "caracteristicas" : [
+            "Faixas etárias de 25 a 39 anos e de 40 a 54 anos",
+            "É o que mais possui algum tipo de animal de estimação em casa"
+          ],
+        "id" : "s3",
+          "titulo" : "Segmento 3 - Presente e Futuro Prósperos",
+          "descricao" : "Populaçãona faixa de 25 a 54 anos, concentrada, principalmente, na região Centro-Oeste. Possuem ensino superior e renda alta. A família pequena em sua maioria, que mora em apartamentos médios em aquisição.",
+          "imagem" : "path/da/image.png",
+          "caracteristicas" : [
+            "Renda média de R$9.256,91",
+            "O segmento é o que mais sofre influência das celebridades em suas decisões de compras, dentro do grupo de classe A"
+          ]
+      }],
+    "id" : "m2",
+      "titulo" : "2. Estabilidade Merecida",
+      "descricao" : "Com mais de 40 anos e nível alto de escolaridade, são pessoas na maturidade com estabilidade financeira.",
+      "imagem" : "path/da/imagem.png",
+      "segmentos" : [{
+        "id" : "s4",
+          "titulo" : "Segmento 4 - Legado Estabelecido",
+          "descricao" : "Na sua maioria possuem apartamentos grandes, com famílias pequenas com alta renda, alta escolaridade e proporção de pessoas acima de 70 anos cerca de duas vezes maior que a média Brasil.",
+          "imagem" : "path/da/image.png",
+          "caracteristicas" : [
+            "Renda média de R$9.442,49",
+            "O  segmento  é  o que menos  sente prazer  em qualquer  tipo  de  compra dentre todos os segmentos populacionais"
+          ],
+        "id" : "s5",
+          "titulo" : "Segmento 5 - Estabilidade nos Grandes Centros",
+          "descricao" : "Concentra-se  em  metrópoles  da  região  Sudeste  e  possuem  condição financeira confortável, alta escolaridade e idade elevada. A população em sua maioria reside em apartamentos médios com até dois moradores.",
+          "imagem" : "path/da/image.png",
+          "caracteristicas" : [
+            "Renda média de R$5.243,88",
+            "A maioria possui seguro de saúde"
+          ]
+      }],
+      "id" : "m3",
+      "titulo" : "3 - Futuro Promissor",
+      "descricao" : "Representa famílias jovens com alta escolaridade que estão construindo a vida nas regiões metropolitanas.",
+      "imagem" : "path/da/imagem.png",
+      "segmentos" : [{
+        "id" : "s6",
+          "titulo" : "Segmento 6 - Famílias Promissoras",
+          "descricao" : "Possui uma proporção maior no macro segmento Futuro Promissor de casas como domicílios, graude escolaridade alta e possuem um renda média por domicílio de aproximadamente seis salários mínimos, com média três moradores por domicílio. Apresenta uma proporção representativa na região Centro-Oeste.",
+          "imagem" : "path/da/image.png",
+          "caracteristicas" : [
+            "Renda média de R$5.173,80",
+            "O segmento é o que mais andou de carro nos últimos 7 dias dentro do grupo de classe B, ao mesmo tempo, é o que menos andou de ônibus no mesmo período.",
+            "Uma parcela considerável faz compra a prazo e possui cartão de loja / supermercado."
+          ],
+        "id" : "s7",
+          "titulo" : "Segmento 7 - Famílias Jovens em Ascensão",
+          "descricao" : "Apresenta concentração de população na faixa de 25 a 39 anos com até dois moradores por domicílio. Situam-se em maior proporção na região Sudeste, possuem renda média domiciliar  de  aproximadamente  cinco  salários  mínimos  e  proporção maior  no  ensino médio como grau de escolaridade.",
+          "imagem" : "path/da/image.png",
+          "caracteristicas" : [
+            "Renda média de R$3.760,99",
+            "Em relação ao grupo de segmentos de classe B, o segmento foi o que mais andou de bicicleta nos últimos 7 dias",
+            "Quase metade dos domicílios possui cachorro, sendo a maior parcela dentro do grupo de segmentos de classe B"
+          ]
+      }]
+  }]
+}
