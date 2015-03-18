@@ -1,0 +1,115 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <!--- Bloco Segmetacao -->
+  <div class="jaf-row jaf-container" id="segmentacao">
+
+    <p>Carregando dados...</p>
+    
+  </div>
+
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/mustache.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <script id="segmentacao-template" type="x-tmpl-mustache">
+    <div id="caroussel-seg" class="owl-carousel owl-theme">
+      
+      <div class="owl-wrapper-outer">
+        <div class="owl-wrapper">
+          
+          <!-- Macro Repeat Links -->
+          {{#macrosegmentos}}
+          <div class="owl-item">
+            <div class="item">
+              <div class="folder active-tool" id="{{id}}">
+                <a href="#">
+                  <img class="app-icon" src="{{imagem}}">
+                  <p>{{titulo}}</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          {{/macrosegmentos}}
+        </div>
+      </div>
+
+      <div class="owl-controls clickable">
+        <div class="owl-buttons">
+          <div class="owl-prev">
+            <i class="icon-chevron-left icon-white"></i>
+          </div>
+          <div class="owl-next">
+            <i class="icon-chevron-right icon-white"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {{#macrosegmentos}}
+    <div class="folderContent {{id}}">
+      <div class="jaf-container">
+        <div>
+
+          <h2>{{titulo}}</h2>
+          <p>{{descricao}}</p>
+          
+          <div class="tabs tabs-style-iconbox">
+            <nav>
+              <ul>
+                {{#segmentos}}
+                <li class="">
+                  <a href="#section-iconbox-{{id}}">
+                    <span>{{titulo}}</span>
+                  </a>
+                </li>
+                {{/segmentos}}
+              </ul>
+            </nav>
+            <div class="content-wrap">
+              
+              {{#segmentos}}
+              <section id="section-iconbox-{{id}}" class="">
+                <h2>{{titulo}}</h2>
+
+                <p>{{descricao}}</p>
+
+                <h3>Principais características</h3>
+                <ul>
+                  {{#caracteristicas}}
+                  <li>{{.}}</li>
+                  {{/caracteristicas}}
+                </ul>
+              </section>
+              {{/segmentos}}
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {{/macrosegmentos}}
+  </script>
+
+  <script>
+    $(function() {
+      $.getJSON('data/segmentacao.json', function(data) {
+
+        var template = $('#segmentacao-template').html();
+        Mustache.parse(template); // optional, speeds up future uses
+        var rendered = Mustache.render(template, data);
+        $('#segmentacao').html(rendered);
+
+      });
+    });
+  </script>
+
+</body>
+</html>
